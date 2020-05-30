@@ -1,0 +1,35 @@
+/* 
+    Document   : estilo
+    Created on : 04/07/2015, 09:50:07
+    Author     : Paolo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.root {
+     -fx-background-image: url("background.jpg");
+}
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+.label
+{
+    -fx-text-fill: black;
+}
+
+.saida {
+    -fx-highlight-fill: #00ff00;
+    -fx-highlight-text-fill: #000000;
+    -fx-text-fill: #00ff00;
+}
+

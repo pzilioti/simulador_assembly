@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxWidth="800" fx:controller="ep2ocd.SampleController" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="12" vgap="12" styleClass="root">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+    <gridLinesVisible>false</gridLinesVisible>
+    <TextArea maxWidth="500"  GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.columnSpan="2" GridPane.rowSpan="6" fx:id="entrada"/>
+    <HBox spacing="10" alignment="bottom_right" 
+        GridPane.columnIndex="4" GridPane.rowIndex="0">
+        <Button text="Carregar Programa" onAction="#iniciar" /> <!-- dentro da area do botao :onAction="acao que aciona botao"-->           
+    </HBox>
+    
+    
+    <TextArea maxWidth="500"  GridPane.columnIndex="2" GridPane.rowIndex="6" GridPane.columnSpan="2" GridPane.rowSpan="7" styleClass="saida" editable="false" fx:id="saida"/>
+    
+    <HBox spacing="10" alignment="bottom_right" 
+        GridPane.columnIndex="4" GridPane.rowIndex="6">
+        <Button text="Executar Próximo" onAction="#executar" /> <!-- dentro da area do botao :onAction="acao que aciona botao"-->           
+    </HBox>
+
+<Text fx:id="actiontarget"
+       GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    
+    <Label text="AX" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="ax" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="0" editable="false"/>
+    <Label text="BX" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="bx" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="1" editable="false"/>
+    <Label text="CX" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="cx" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="2" editable="false"/>
+    <Label text="DX" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="dx" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="3" editable="false"/>    
+    <Label text="MAR" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <TextField fx:id="mar" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="4" editable="false"/>
+    <Label text="MBR" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <TextField fx:id="mbr" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="5" editable="false"/>
+    <Label text="X" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <TextField fx:id="x" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="6" editable="false"/>
+    <Label text="ULA" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+    <TextField fx:id="ula" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="7" editable="false"/>  
+    <Label text="AC" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+    <TextField fx:id="ac" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="8" editable="false"/> 
+    <Label text="IR" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+    <TextField fx:id="ir" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="9" editable="false"/>    
+    <Label text="PC" GridPane.columnIndex="0" GridPane.rowIndex="10"/>
+    <TextField fx:id="pc" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="10" editable="false"/>
+    <Label text="ZERO" GridPane.columnIndex="0" GridPane.rowIndex="11"/>
+    <TextField fx:id="zero" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="11" editable="false"/>
+    <Label text="SINAL" GridPane.columnIndex="0" GridPane.rowIndex="12"/>
+    <TextField fx:id="sinal" maxWidth="110" GridPane.columnIndex="1" GridPane.rowIndex="12" editable="false"/> 
+      
+    
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>        
+</GridPane>
